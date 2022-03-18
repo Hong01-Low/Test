@@ -1,0 +1,94 @@
+.background-gradient {
+  @include themify-gradient(bottom right);
+}
+
+.background-gray {
+  background-color: $color-bg-auth;
+}
+
+.landing-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 350px;
+}
+
+.text-div {
+  padding: 0;
+  padding-top: 5rem;
+}
+
+@media (max-width:1288px) {
+  .large-text-div {
+    padding: 0;
+    padding-top: 4rem;
+  }
+}
+
+.icon-text-div {
+  padding: 0;
+  padding-top: 6rem;
+}
+
+@media (max-width:1270px) {
+  .large-icon-text-div {
+    padding: 0;
+    padding-top: 4rem;
+  }
+}
+
+.landing-image-one {
+  background-image: url("../assets/landing/contractor1.png");
+}
+
+.landing-image-two {
+  background-image: url("../assets/landing/material1.png");
+}
+
+.landing-image-three {
+  background-image: url("../assets/landing/machine1.png");
+}
+
+.background-blue {
+  @include themify(background-color, color-bright-blue);
+}
+
+.background-peach {
+  background-color: $color-brand-light !important;
+}
+
+.background-purple {
+  background-color: $color-brand-secondary !important;
+}
+
+.background-stone-gray {
+  background-color: $stone-gray !important;
+}
+
+.background-green-cyan {
+  background-color: $green-cyan !important;
+}
+
+.background-light-orange {
+  background-color: $light-orange !important;
+}
+
+.background-light-purple {
+  @include themify(background-color, color-light-purple);
+}
+
+.background-gradient-light-purple {
+  background-image: linear-gradient(90deg, $color-brand-secondary, white);
+}
+
+.background-white {
+  background-color: $white !important;
+}
+
+.background-light-pink {
+  background-color: $light-pink !important;
+}
+
+.background-white-hover:hover {
+  background-image: linear-gradient(90deg, $color-brand-secondary, white);
+}

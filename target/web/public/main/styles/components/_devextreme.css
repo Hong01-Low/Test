@@ -1,0 +1,90 @@
+// Use this file to override devextreme css styling. 
+
+// Project summary table in dashboard
+.dx-header-row {
+  .project-name-col {
+    text-align: left;
+  }
+  background-color: #f0f0f0;
+  color: black;
+  text-align: right;
+  font-weight: bold;
+}
+
+#gridContainer {
+  height: 75vh;
+}
+
+// Treelist in Smart BQ
+.dx-treelist-container {
+  z-index: 1;
+}
+
+.dx-widget {
+  letter-spacing: 0.1px;
+  font-size: 12px;
+  font-family: "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.dx-treelist-table .dx-header-row > td {
+  padding: 12px;
+}
+
+.App{
+  margin: 10% 40%;
+}
+.read-more-link{
+  color: blueviolet;
+  text-decoration: underline;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.extra-content{
+  color: cornflowerblue;
+  font-weight: 500;
+}
+
+.dx-treelist-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link,
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused),
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) {
+  background-color: #e0b0ff;
+  color: #000;
+}
+
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > td,
+.dx-treelist-rowsview .dx-row-focused.dx-data-row > tr:last-child > td {
+  border-bottom: 1px solid #8c1896;
+}
+
+.dx-treelist .dx-link, .dx-datagrid .dx-link {
+  color: #8c1896;
+}
+
+.dx-datagrid .dx-column-lines .border-left-2px {
+  border-left: 2px rgb(212, 212, 212) solid;
+}
+
+.dx-datagrid .dx-column-lines .border-right-1px {
+  border-right: 1px solid rgba(0,0,0,0.3);
+}
+
+.dx-datagrid .dx-column-lines .border-right-double-2px {
+  border-right: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.dx-datagrid .dx-column-lines .border-right-2px {
+  border-right: 2px solid #000;
+}
+
+.dx-datagrid .dx-data-row .bg-light-gray {
+  background-color: #f7f8f9;
+}
+
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row .dx-command-edit:not(.dx-focused) .dx-link, .dx-datagrid-rowsview .dx-row-focused.dx-data-row > td:not(.dx-focused), .dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr > td:not(.dx-focused) {
+  background-color: #ffffe4;  
+  color: #000000;
+}
+
+.dx-datagrid-rowsview .dx-row-focused.dx-data-row > td, .dx-datagrid-rowsview .dx-row-focused.dx-data-row > tr:last-child > td {
+  border-bottom: 1px solid #ddd;
+}

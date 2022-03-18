@@ -1,0 +1,90 @@
+.phone-input-container {
+  position: relative;
+  width: 100%;
+  font-size: 1rem;
+
+  .flag-button {
+    background: none;
+    border: none;
+
+    &.open-dropdown {
+      .selected-flag {
+        background-color: #ddd;
+      }
+    }
+
+    .selected-flag:hover {
+      background-color: #ddd;
+    }
+  }
+
+  .input[type="tel"] {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 48px;
+    height: calc(2.81875rem + 0rem);
+    width: 100%;
+    background: none;
+    border: none;
+    box-shadow: inset 0 -1px 0 #ddd;
+    border-radius: 0;
+    font-size: inherit;
+
+    &:focus {
+      @include themify((box-shadow, -webkit-box-shadow), (shadow-form-input, shadow-form-input));
+    }
+  }
+
+  &.is-invalid .input[type="tel"] {
+    box-shadow: inset 0 -2px 0 #e51c23;
+  }
+
+  &.inline-input .input[type="tel"] { 
+    padding: 0;
+    padding-left: 48px;
+    height: initial;
+  }
+}
+
+.phone-input-box-container {
+  position: relative;
+  width: 100%;
+
+  .flag-button {
+    background: none;
+    border: none;
+
+    &.open-dropdown {
+      .selected-flag {
+        background-color: #ddd;
+      }
+    }
+
+    .selected-flag:hover {
+      background-color: #ddd;
+    }
+  }
+
+  .input[type="tel"] {
+    padding-left: 48px;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 -1px 0 #ddd;
+    font-size: inherit;
+
+    &:focus {
+      @include themify((box-shadow, -webkit-box-shadow), (shadow-form-input, shadow-form-input));
+    }
+  }
+
+  &.is-invalid .input[type="tel"] {
+    box-shadow: inset 0 -2px 0 #e51c23;
+  }
+
+  &.inline-input .input[type="tel"] { 
+    padding: 0;
+    padding-left: 48px;
+    height: initial;
+  }
+}

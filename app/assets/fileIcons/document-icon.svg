@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 460 494" style="enable-background:new 0 0 460 494;" xml:space="preserve" width="69px" height="79px">
+<style type="text/css">
+	.st0{fill:#808080;}
+	.st1{fill:#4d4d4d;}
+	.st2{fill:#c0c0c0;}
+	.st3{fill:#FFFFFF;}
+</style>
+<g>
+	<path class="st0" d="M385.37,472.5H74.63C53.85,472.5,37,455.65,37,434.87V59.13C37,38.35,53.85,21.5,74.63,21.5H324l99,105v308.37
+		C423,455.65,406.15,472.5,385.37,472.5z"/>
+	<polygon class="st1" points="334.21,126.53 423,218.42 423,128.5 371.93,72.33 	"/>
+	<path class="st2" d="M343.45,128.5H423l-99-107l-3.12,83.57C320.4,117.87,330.64,128.5,343.45,128.5z"/>
+	<rect x="115" y="155.5" class="st3" width="119" height="27"/>
+	<rect x="115" y="204.5" class="st3" width="178" height="23"/>
+	<rect x="115" y="253.5" class="st3" width="224" height="22"/>
+	<rect x="115" y="300.5" class="st3" width="224" height="28"/>
+	<rect x="115" y="350.5" class="st3" width="224" height="24"/>
+</g>
+</svg>

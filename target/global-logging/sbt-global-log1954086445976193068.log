@@ -1,0 +1,8 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(compile, Some(9b82aba9-0d35-47ef-a168-f0e22c1c0f19), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / compile[0m
+[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 14 Scala sources and 1 Java source to C:\Users\HP\Hong\Test\target\scala-2.13\classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mNon-compiled module 'compiler-bridge_2.13' for Scala 2.13.6. Compiling...[0m
+[0m[[0m[0minfo[0m] [0m[0m  Compilation completed in 13.334s.[0m
+[0m[[0m[32msuccess[0m] [0m[0mTotal time: 198 s (03:18), completed Mar 17, 2022 4:12:08 PM[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m

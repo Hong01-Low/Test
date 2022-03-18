@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="21px" viewBox="0 0 26 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>history sidebar icon_ON</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Tender-&gt;&gt;-Create-PO/RO/WO" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="history-sidebar-icon_ON" fill="#FF5A5F" fill-rule="nonzero">
+            <polygon id="Path" points="14 6 14 11.9681448 19.1359946 15 20 13.5497317 15.8000113 11.0729175 15.8000113 6"></polygon>
+            <path d="M14.850933,0 C8.69142857,0 3.71428571,4.70164844 3.71428571,10.5 L0,10.5 L4.82236161,15.0441484 L4.90900893,15.2132969 L9.90478125,10.5 L6.19049554,10.5 C6.19049554,5.99085156 10.0719241,2.33335156 14.8571429,2.33335156 C19.6423616,2.33335156 23.5237902,5.99085156 23.5237902,10.5 C23.5237902,15.0091484 19.6423616,18.6666484 14.8571429,18.6666484 C12.4614286,18.6666484 10.300933,17.745 8.73478125,16.2691484 L6.98285714,17.92 C8.99478125,19.8216484 11.7742857,21 14.850933,21 C21.0104955,21 26,16.2983516 26,10.5 C26,4.70164844 21.0104955,0 14.850933,0 Z" id="Path"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="42px" height="54px" viewBox="0 0 42 54" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Tender Costing</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Menu-Drawer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1366.000000, -472.000000)" fill-rule="nonzero">
+            <g id="Tender-Costing" transform="translate(1366.000000, 472.000000)">
+                <rect id="Rectangle" fill="#DCF1FA" x="0.82" y="0.3" width="40.92" height="53.2"></rect>
+                <rect id="Rectangle" fill="#5BC5ED" x="4.2" y="4.71" width="34.16" height="11.17"></rect>
+                <rect id="Rectangle" fill="#1AB795" x="28.13" y="19.39" width="8.38" height="8.38"></rect>
+                <polygon id="Path" fill="#459787" points="34.89 19.39 34.89 26.19 28.06 26.19 28.06 27.77 36.45 27.77 36.45 19.39"></polygon>
+                <rect id="Rectangle" fill="#EA6347" x="28.13" y="30.3" width="8.38" height="17.57"></rect>
+                <polygon id="Path" fill="#8E2785" points="34.56 30.3 34.56 45.86 28.29 45.86 28.29 47.86 36.67 47.86 36.67 30.3"></polygon>
+                <g id="Group" transform="translate(6.000000, 20.000000)">
+                    <rect id="Rectangle" fill="#415D63" x="0.24" y="0.01" width="7.28" height="7.28"></rect>
+                    <polygon id="Path" fill="#2F464B" points="6.32 0.01 6.32 6.28 0.24 6.28 0.24 7.29 7.52 7.29 7.52 0.01"></polygon>
+                </g>
+                <g id="Group" transform="translate(17.000000, 20.000000)">
+                    <rect id="Rectangle" fill="#415D63" x="0.64" y="0.01" width="7.28" height="7.28"></rect>
+                    <polygon id="Path" fill="#2F464B" points="6.72 0.01 6.72 6.28 0.64 6.28 0.64 7.29 7.92 7.29 7.92 0.01"></polygon>
+                </g>
+                <g id="Group" transform="translate(6.000000, 30.000000)">
+                    <rect id="Rectangle" fill="#415D63" x="0.24" y="0.3" width="7.28" height="7.28"></rect>
+                    <polygon id="Path" fill="#2F464B" points="6.32 0.3 6.32 6.56 0.24 6.56 0.24 7.58 7.52 7.58 7.52 0.3"></polygon>
+                </g>
+                <g id="Group" transform="translate(17.000000, 30.000000)">
+                    <rect id="Rectangle" fill="#415D63" x="0.64" y="0.3" width="7.28" height="7.28"></rect>
+                    <polygon id="Path" fill="#2F464B" points="6.72 0.3 6.72 6.56 0.64 6.56 0.64 7.58 7.92 7.58 7.92 0.3"></polygon>
+                </g>
+                <g id="Group" transform="translate(6.000000, 40.000000)">
+                    <rect id="Rectangle" fill="#415D63" x="0.24" y="0.58" width="7.28" height="7.28"></rect>
+                    <polygon id="Path" fill="#2F464B" points="6.32 0.58 6.32 6.84 0.24 6.84 0.24 7.86 7.52 7.86 7.52 0.58"></polygon>
+                </g>
+                <g id="Group" transform="translate(17.000000, 40.000000)">
+                    <rect id="Rectangle" fill="#415D63" x="0.64" y="0.58" width="7.28" height="7.28"></rect>
+                    <polygon id="Path" fill="#2F464B" points="6.72 0.58 6.72 6.84 0.64 6.84 0.64 7.86 7.92 7.86 7.92 0.58"></polygon>
+                </g>
+                <g id="Group" opacity="0.95" transform="translate(23.000000, 4.000000)" fill="#F6FBFD">
+                    <polygon id="Path" points="4.13 0.71 8.11 0.71 4.8 11.88 0.29 11.88"></polygon>
+                </g>
+                <g id="Group" opacity="0.95" transform="translate(29.000000, 4.000000)" fill="#F6FBFD">
+                    <polygon id="Path" points="3.9 0.71 5.47 0.71 2.16 11.88 0.37 11.88"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

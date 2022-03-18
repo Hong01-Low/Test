@@ -1,0 +1,226 @@
+.material-icons {
+  vertical-align: bottom;
+}
+
+.text-white-xl {
+  font-size: 45px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 45px;
+}
+
+.text-white-large {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.text-white-md {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 45px;
+}
+
+.text-white-small {
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.no-hover-decoration:hover {
+  text-decoration: none !important;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.select-company-text-gray-small {
+  font-size: 14px;
+  font-weight: 400;
+  color: $color-text-default;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-22 {
+  font-size: 22px;
+}
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-inherit {
+  font-weight: inherit;
+}
+
+.fw-initial {
+  font-weight: initial;
+}
+
+.text-orange {
+  color: $color-brand-light;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-dark-purple {
+  color: #4F1964;
+}
+
+.fs-extra-large {
+  font-size: $font-size-extra-large
+}
+
+.fs-large {
+  font-size: $font-size-large
+}
+
+.fs-heading-1 {
+  font-size: $font-size-heading-1
+}
+
+.fs-heading-2 {
+  font-size: $font-size-heading-2
+}
+
+.fs-heading-3 {
+  font-size: $font-size-heading-3
+}
+
+.fs-subtitle {
+  font-size: $font-size-subtitle
+}
+
+.fs-standard {
+  font-size: $font-size-standard
+}
+
+.fs-small {
+  font-size: $font-size-small !important
+}
+
+.fs-extra-small {
+  font-size: $font-size-extra-small !important
+}
+
+.text-gray {
+  color: $color-text-default;
+}
+
+.text-blue {
+  @include themify(color, color-light-blue);
+}
+
+.text-bright-blue {
+  @include themify(color, color-bright-blue);
+}
+
+.text-purple {
+  @include themify(color, color-brand-secondary);
+}
+
+.text-pink {
+  color: $color-brand-pink;
+}
+
+.text-yellow {
+  color: $yellow;
+}
+
+.text-light-orange {
+  color: $light-orange;
+}
+
+.text-light-pink {
+  color: $color-brand-light;
+}
+
+.text-dark-green {
+  color: $dark-green;
+}
+
+.text-bright-green {
+  color: $green-cyan;
+}
+
+.text-green {
+  color: #7CFC00;
+}
+
+.text-cyan {
+  color: #2c85bb;
+}
+
+.text-red {
+  color: $crimson-red;
+}
+
+.multiline {
+  white-space: pre-wrap;
+}
+
+.lh-20 {
+  line-height: 20px;
+}
+
+.lh-10 {
+  line-height: 10px;
+}
+
+.ls-5 { 
+  letter-spacing: 5px;
+}
+
+.overflow-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-hyphens {
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.word-break-all {
+  word-break: break-all;
+}
+
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+
+.text-transform-none {
+  text-transform: none;
+}
+
+.text-light-red {
+  color: $light-red;
+}

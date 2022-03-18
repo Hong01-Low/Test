@@ -1,0 +1,102 @@
+
+.pop-over-navbar {
+  height: 50vh;
+  overflow: auto
+}
+
+.pop-over {
+  background-color: #FFF;
+
+  -webkit-box-shadow: 0 2px 4px 0.1px #999;
+  box-shadow: 0 2px 4px 0.1px #999;
+
+  z-index: 15;
+
+  &.pop-over-tooltip {
+    background-color: #000;
+    color: #FFF;
+
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+    max-width: 300px;
+
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+    opacity: 0;
+
+    transition: opacity 0.5s;
+    /* Needed to prevent tooltip overlap with other element */
+    visibility: hidden;
+
+    // Make the container non selectable.
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+
+  .pop-over-arrow {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: #FFF;
+    position: absolute;
+  }
+
+  &.has-arrow[data-placement^="top"] {
+      margin-bottom: 10px;
+  }
+
+  &.has-arrow[data-placement^="bottom"] {
+      margin-top: 10px;
+  }
+
+  &.has-arrow[data-placement^="right"] {
+    margin-left: 10px;
+  }
+
+  &[data-placement^="top"] .pop-over-arrow {
+    border-width: 10px 10px 0 10px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    bottom: -10px;
+    left: calc(50% - 10px);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &[data-placement^="bottom"] .pop-over-arrow {
+    border-width: 0 10px 10px 10px;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    top: -10px;
+    left: calc(50% - 10px);
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  &[data-placement^="right"] .pop-over-arrow {
+    border-width: 10px 10px 10px 0;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    left: -10px;
+    top: calc(50% - 10px);
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.pop-over-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.tooltip-container:hover + .pop-over-tooltip {
+  opacity: 0.8;
+  visibility: visible;
+}

@@ -1,0 +1,54 @@
+@*
+ * This template is called from the `index` template. This template
+ * handles the rendering of the page header and body tags. It takes
+ * three arguments, a `String` for the title of the page and an `Html`
+ * object to insert into the body of the page and an `AssetFinder`
+ * to define to reverse route static assets.
+ *@
+@(title: String, role: Int)(content: Html)(implicit assetsFinder: AssetsFinder)
+
+<!DOCTYPE html>
+<html lang="en">
+@if(role == 1) {
+    <head>
+        @* Here's where we render the page title `String`. *@
+        <title>@title</title>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_aliceCarousel.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_autoComplete.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_backgrounds.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_bqscan.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_buttons.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_carousel.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_carousel.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_charts.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_components.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_containers.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_dashboard.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_datePicker.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_devextreme.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_forms.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_landing.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_modal.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_navBar.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_phoneInput.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_popOver.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_progressStep.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_syncfusion.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_table.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_tools.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/components/_treeTable.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/utilities/_spacing.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/utilities/_themify.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/utilities/_typography.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/utilities/_utilities.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/_config.css")'>
+        <link rel="stylesheet" href='@routes.Assets.versioned("styles/App.css")'>
+        <script src='@assetsFinder.path("javascripts/hello.js")' type="text/javascript"></script>
+    </head>
+    <body>
+        @* And here's where we render the `Html` object containing
+         * the page content. *@
+        @content
+    </body>
+</html>
+}

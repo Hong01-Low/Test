@@ -1,0 +1,65 @@
+// Use this file to override Syncfusion css styling. 
+
+.e-grid .e-rowcell {
+  border-style: solid;
+  border-width: 1px 0 0 0;
+  display: table-cell;
+  font-size: 0.75rem;
+  line-height: 20px;
+  overflow: hidden;
+  padding: 0px;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: auto;
+}
+
+.e-grid .e-row .e-input-group .e-input.e-field,
+.e-grid .e-row .e-input-focus .e-input.e-field {
+  font-family: "Roboto", "Segoe UI", "GeezaPro", "DejaVu Serif", "sans-serif", "-apple-system", "BlinkMacSystemFont";
+  font-size: 0.75rem;
+  padding-bottom: 1px;
+  padding-top: 0px;
+  box-shadow: none;
+}
+
+.e-grid .e-row .e-input-group {
+  margin-bottom: 0px;
+  margin-top: 0;
+  vertical-align: middle;
+}
+
+.e-grid:not(.e-grid-min-height) .e-gridcontent tr td:not(.e-indentcell):first-child:empty,
+.e-grid:not(.e-grid-min-height) .e-gridcontent tr.e-row .e-rowcell:empty {
+  height: 20px;
+}
+
+.e-grid.e-wrap .e-stackedheader .e-columnheader .e-stackedheadercelldiv,
+.e-grid.e-wrap .e-stackedheader .e-columnheader .e-headercelldiv {
+  max-height: none;
+}
+
+.hide-button {
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &.selected {
+    opacity: 1;
+  }
+}
+
+.e-control {
+  font-family: "Helvetica", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+}
+
+.e-gantt .e-gantt-dialog .e-dlg-header-content {
+  background: #8c1896 !important;
+}
+
+.e-gantt .e-gantt-dialog .e-tab .e-tab-header {
+  background: #8c1896 !important;
+}

@@ -1,0 +1,97 @@
+html,body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+.mt-6 {
+  margin-top: 6rem;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .ml-lg-5 {
+    margin-left: 3rem;
+  }
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-97 {
+  width: 97%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-18 {
+  width: 18%;
+}
+
+.w-13 {
+  width: 13%;
+}
+
+.w-12 {
+  width: 12%;
+}
+
+.w-5 {
+  width: 5%;
+}
+
+.width-180 {
+  width: 180px;
+}
+
+.width-200 {
+  width: 200px;
+}
+
+.width-250 {
+  width: 250px;
+}
+
+.width-300 {
+  width: 300px;
+}
+
+.width-400 {
+  width: 400px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flex-2 {
+  flex: 2;
+}
+
+.flex-3 {
+  flex: 3;
+}
+
+.padding-left-30 {
+  padding-left: 30px;
+}
+
+.padding-right-30 {
+  padding-right: 30px;
+}
+
+.lh-24 {
+  line-height: 24px;
+}
+
+.lh-100 {
+  line-height: 100%;
+}

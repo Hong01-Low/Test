@@ -1,0 +1,254 @@
+.invalid-feedback.force-show {
+  display: block;
+}
+
+.no-decoration-input {
+  border: 0;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.no-decoration-input-1 {
+  border: 0;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  font-size: $font-size-small !important;
+}
+
+.form-group.inline-input {
+  margin-bottom: 0;
+  display: inline-block;
+
+  input {
+    padding: 8px 0;
+    height: initial;
+  }
+}
+
+.inline-input.height {
+  height:75%;
+  outline: none;
+  border: none;
+  font-size: $font-size-small !important;
+}
+
+.inline-input.full-width {
+  width: 100%;
+}
+
+.inline-select {
+  width: 100%;
+  padding: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-label-value {
+  margin-bottom: 1.5rem;
+  div{
+    font-size: 1rem;
+  }
+
+  div {
+    font-size: 1rem;
+  }
+}
+
+/**
+ * Default Form Input Overrides
+ */
+ textarea:focus,
+ textarea.form-control:focus,
+ input.form-control:focus,
+ input[type="text"]:focus,
+ input[type="password"]:focus,
+ input[type="email"]:focus,
+ input[type="number"]:focus,
+ [type="text"].form-control:focus,
+ [type="password"].form-control:focus,
+ [type="email"].form-control:focus,
+ [type="tel"].form-control:focus,
+ [contenteditable].form-control:focus {
+  @include themify((box-shadow, -webkit-box-shadow), (shadow-form-input, shadow-form-input));
+}
+
+/**
+ * React Select Styles
+ */
+
+.form__control {
+  box-shadow: inset 0 -1px 0 #ddd;
+  cursor: default;
+  font-size: inherit;
+  outline: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+.form__control--is-focused {
+  @include themify((box-shadow, -webkit-box-shadow), (shadow-form-input, shadow-form-input));
+
+  .form__dropdown-indicator {
+    color: hsl(0, 0%, 20%);
+
+    &:hover {
+      color: hsl(0, 0%, 20%);
+    }
+  }
+}
+
+.form-group .is-invalid .form__control {
+  box-shadow: inset 0 -2px 0 #e51c23;
+}
+
+.form-light-purple {
+  background-color: #f4e6f7;
+}
+
+.form__indicator-separator {
+  width: 0;
+}
+
+.form__value-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  flex-wrap: wrap;
+  height: 1.5rem;
+  overflow: hidden;
+  padding: 0;
+  padding-left: 8px;
+}
+
+.form__dropdown-indicator {
+  color: hsl(0, 0%, 80%);
+  display: flex;
+  padding: 0 4px;
+  transition: color 0.2s;
+
+  &:hover {
+    color: hsl(0, 0%, 60%);
+  }
+}
+
+.form__single-value {
+  color: #666;
+  overflow: hidden;
+  max-width: 90%;
+  position: absolute;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: break-word;
+}
+
+.form__option {
+  &.form__option--is-focused {
+    @include themify(background-color, color-light-purple);
+  }
+
+  &.form__option--is-selected {
+    @include themify(background-color, color-brand-secondary);
+  }
+}
+
+// Suggestion list container
+.form__menu {
+  z-index: 2 !important;
+}
+
+/* This is used to select the text input container,
+   which react select does not provide any specific class. */
+.form__value-container > div:last-child {
+  margin: 0;
+  padding: 0;
+}
+
+.form__control input[type="text"] {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: 1rem 0;
+  height: auto;
+}
+
+// Mimic the height of all form input components on standard form.
+// .form-group .form__control input[type="text"] {
+//   height: calc(2.81875rem + 0rem);
+// }
+
+// Larger size for inline drop down.
+.inline-select .form__control input[type="text"] {
+  height: calc(2.81875rem + 0rem);
+}
+
+ /* --- */
+ 
+ // Make large checkbox purple.
+.custom-control-input:checked ~ .custom-control-label::before {
+  @include themify(border-color, color-brand-secondary);
+}
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+  @include themify(background-color, color-brand-secondary);
+}
+
+.document-checkbox{
+  width: 20px;
+  height: 20px; 
+  left: 3px; 
+  position: absolute;
+
+  &:checked{
+    @include themify(background-color, color-brand-secondary);
+  }
+}
+
+.custom-control.vertical {
+  padding-left: 0;
+  padding-top: 1.75rem;
+  min-width: 1.25rem;
+
+  .custom-control-label {
+    width: 100%;
+    text-align: center;
+  }
+
+  .custom-control-label::before {
+    left: 0;
+    top: -1.75rem;
+  }
+
+  .custom-control-label:after {
+    left: 0rem;
+    top: -1.75rem;
+  }
+}
+
+// Make large radio purple
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3E%3Ccircle r='4' fill='%238C1896'/%3E%3C/svg%3E");
+}
+
+// Make labels change color when focused.
+// Original implementation only allows label directly under form-group which some of
+// our input components cannot follow.
+.form-group:focus-within label {
+  @include themify(color, color-brand-secondary, !important);
+}
+
+.inventory-search-input {
+  input {
+    font-size: $font-size-standard
+  }
+}

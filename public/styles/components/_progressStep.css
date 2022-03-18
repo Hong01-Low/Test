@@ -1,0 +1,254 @@
+
+/* 
+  Progress Tracker: Adapted from https://stackoverflow.com/a/32284749 
+*/
+ol.progress-step[data-steps="2"] li { width: 49%; }
+ol.progress-step[data-steps="3"] li { width: 33%; }
+ol.progress-step[data-steps="4"] li { width: 24%; }
+ol.progress-step[data-steps="5"] li { width: 19%; }
+ol.progress-step[data-steps="6"] li { width: 16%; }
+ol.progress-step[data-steps="7"] li { width: 14%; }
+ol.progress-step[data-steps="8"] li { width: 12%; }
+ol.progress-step[data-steps="9"] li { width: 11%; }
+
+.progress-step {
+  width: 100%;
+  list-style: none;
+  list-style-image: none;
+  padding: 0;
+
+  li {
+    float: left;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .name {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 0.7rem;
+    color: #c6c6c6;
+    white-space: nowrap;
+    line-height: 1.1;
+  }
+  
+  .step {
+    color: black;
+    background-color: #FFF;
+    border-radius: 50%;
+    line-height: 1.2;
+    width: 1.75rem;
+    height: 1.75rem;
+    display: inline-block;
+
+    border: 0.1rem solid #c0c0c0;
+    padding: 0.25rem;
+  }
+  
+  .step:before {
+    content: "";
+    display: block;
+    background-color: #c0c0c0;
+    height: 0.2rem;
+    width: 50%;
+    position: absolute;
+    bottom: 1.1rem;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .step:after {
+    content: "";
+    display: block;
+    background-color: #c0c0c0;
+    height: 0.2rem;
+    width: 50%;
+    position: absolute;
+    bottom: 1.1rem;
+    right: 0;
+    z-index: -1;
+  }
+  
+  li:first-of-type .step:before {
+    display: none;
+  }
+  
+  li:last-of-type .step:after {
+    display: none;
+  }
+  
+  .done .step,
+  .done .step:before,
+  .done .step:after,
+  .active .step,
+  .active .step:before,
+  .active .step:after,
+  .active + li .step:before {
+    background-color: #802fc9;
+  }
+
+  .done .name {
+    color: #000;
+  }
+
+  .active .name {
+    color: #802fc9;
+  }
+  
+  .done .step,
+  .active .step {
+    background-color: #802fc9;
+
+    border: 0.35rem solid #FFF;
+    box-shadow: 0 0.15rem 0.3rem #999;
+  }
+  
+}
+
+// div.progress {
+//     width: 1000px;
+//     margin: 0 auto;
+
+//   > div.pointer:first-child{
+//     &:after{ 
+//       content: "";
+//       position: absolute;
+//       left: 0;
+//       bottom: 0;
+//       width: 0;
+//       height: 0;
+//       border-left: 0px;
+//       border-top: 0px;
+//       border-bottom: 0px;
+//     }
+//   }
+
+//   .pointer { 
+//       width: 200px;
+//       height: 40px;
+//       position: relative;
+
+//       &:after{ 
+//         content: "";
+//         position: absolute;
+//         left: 0;
+//         bottom: 0;
+//         width: 0;
+//         height: 0;
+//         border-left: 20px solid white;
+//         border-top: 20px solid transparent;
+//         border-bottom: 20px solid transparent;
+//       }
+
+//       &:before {
+//         content: "";
+//         position: absolute;
+//         right: -20px;
+//         bottom: 0;
+//         width: 0;
+//         height: 0;
+//         border-left: 20px solid ;
+//         border-top: 20px solid transparent;
+//         border-bottom: 20px solid transparent;
+//       }
+//   } 
+// }
+
+.progress-container{
+  width: 1000px;
+	margin: 1 auto;
+}
+
+// .progress-wrapper{
+//   display: table-cell;
+// 	height: 400px;
+// 	vertical-align: middle;
+// }
+
+.arrow-steps .step {
+  height: 62px;
+	font-size: 14px;
+	text-align: center;
+	color: #666;
+	cursor: default;
+	margin: 0 3px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+	padding: 10px 10px 10px 30px;
+	width: 160px;
+	float: left;
+	position: relative;
+	background-color: #d9e3f7;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; 
+}
+
+.arrow-steps .step:after,
+.arrow-steps .step:before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: -17px;
+  width: 0;
+  border-top: 31px solid transparent;
+  border-bottom: 31px solid transparent;
+	border-left: 17px solid #d9e3f7;	
+	z-index: 2;
+}
+
+.arrow-steps .step:before {
+	right: auto;
+	left: 0;
+	border-left: 17px solid #fff;	
+	z-index: 0;
+}
+
+.arrow-steps .step:first-child:before {
+	border: none;
+}
+
+.arrow-steps .step:first-child {
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+}
+
+.arrow-steps .step span {
+	position: relative;
+}
+
+.arrow-steps .step span:before {
+	opacity: 0;
+	content: "✔";
+	position: absolute;
+	top: -2px;
+	left: -20px;
+}
+
+.arrow-steps .step.done span:before {
+	opacity: 1;
+}
+
+.arrow-steps .step.current {
+	color: #fff;
+  background-image: linear-gradient(
+    to right,
+    $color-brand-primary,
+    $color-brand-secondary
+  );
+}
+
+.arrow-steps .step.current:after {
+	border-left: 17px solid  $color-brand-secondary;	
+}
+
+.MuiMobileStepper-dotActive {
+  background-color: $color-brand-secondary !important;
+}
+
+.MuiMobileStepper-root {
+  background: transparent !important;
+}

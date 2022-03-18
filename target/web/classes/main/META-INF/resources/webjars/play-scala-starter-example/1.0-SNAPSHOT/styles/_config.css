@@ -1,0 +1,100 @@
+// Themes
+// https://fjcalzado.github.io/DemoSeries-SASS-Easy-Theming/
+$themes: (
+  "niuace": (
+    "color-brand-primary": #ed0047,
+    "color-brand-secondary": #8c1896,
+    "color-brand-mix": mix(#ed0047, #8c1896, 85%),
+    // Replace blue with brand color
+    "color-light-blue": #8c1896,
+    "color-bright-blue": #8c1896,
+    "color-light-purple": #e0b0ff,
+    "color-gradient-primary": #ed0047,
+    "color-gradient-secondary": #8c1896,
+    "shadow-form-input": inset 0 -2px 0 #8c1896
+  ),
+  "bgmc": (
+    "color-brand-primary": #ea1c2c,
+    "color-brand-secondary": #0e4168,
+    "color-brand-mix": mix(#ea1c2c, #0e4168, 85%),
+    // Replace blue with brand color
+    "color-light-blue": #0e4168,
+    "color-bright-blue": #0e4168,
+    "color-light-purple": #a8d2f3,
+    "color-gradient-primary": #0e4168,
+    "color-gradient-secondary": #002154,
+    "shadow-form-input": inset 0 -2px 0 #0e4168
+  ),
+  "education": (
+    "color-brand-primary": #ed0047,
+    "color-brand-secondary": #8c1896,
+    "color-brand-mix": mix(#ed0047, #8c1896, 85%),
+    // Replace blue with brand color
+    "color-light-blue": #8c1896,
+    "color-bright-blue": #8c1896,
+    "color-light-purple": #e0b0ff,
+    "color-gradient-primary": #ed0047,
+    "color-gradient-secondary": #8c1896,
+    "shadow-form-input": inset 0 -2px 0 #8c1896
+  )
+) !default;
+
+// Colors
+$color-brand-primary: #ed0047;
+$color-brand-secondary: #8c1896;
+
+$color-brand-primary-transparent: #9e023191;
+$color-brand-secondary-transparent: #6110689a;
+
+$color-brand-pink: #e10253;
+$color-brand-light: #ff5a5f;
+$crimson-red:#D0021C;
+$color-white-transparent: #ffffff94;
+$color-white-secondary-transparent: #ffffff;
+
+
+$color-text-default: #999;
+$stone-gray: #f0f0f0;
+
+$color-bg-auth: #f7f8f9;
+
+$color-link-blue: #069;
+
+$color-border-main: #dee2e6;
+$color-tree-table-header-freeze-col: #d4dae0;
+$color-tree-table-item-freeze-col: #f8f7f7;
+$yellow: #fff793;
+$light-orange: #fec76b;
+
+$dark-green: #139a8e;
+$green-cyan: #01C877;
+$primary-green: #4CAF50;
+$light-green: #28a745;
+$white: #FFFFFF;
+
+$light-pink: #f5eaf5;
+$light-purple: #e0b0ff;
+$light-red:  #FA8888;
+
+
+// Font Sizes
+$font-size-extra-large: 3rem;
+$font-size-large: 2rem;
+$font-size-heading-1: 1.5rem;
+$font-size-heading-2: 1.375rem;
+$font-size-heading-3: 1.3rem;
+$font-size-subtitle: 1rem;
+$font-size-standard: 0.875rem;
+$font-size-small: 0.75rem;
+$font-size-extra-small: 0.6rem;
+
+$mobile-font-size-subtitle: 0.8rem;
+
+// Dimensions
+$navbar-height: 60px;
+$page-header-height: 73px;
+$right-column-header-height: 75px;
+$chat-box-height: 121px;
+$trade-tree-table-content-width: 550px;
+$trade-tree-table-trade-width: 300px;
+$trade-tree-table-trade-width500: 500px;

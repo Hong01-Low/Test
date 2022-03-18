@@ -1,0 +1,228 @@
+.bq-scan-container {
+  flex-grow: 1;
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  height: 0;
+
+  .page-container {
+    border-right: 1px solid $color-border-main;
+    flex: 0 90 100px;
+    overflow-y: scroll;
+    height:700px;
+
+    .page-item-container {
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      height: 100%;
+
+      .page-item {
+        width: 100%;
+        text-align: left;
+        padding: 0.5rem;
+        border-bottom: 1px solid $color-border-main;
+
+        .item-tab-name {
+          font-size: $font-size-extra-small;
+        }
+
+        &.selected {
+          background-color: $color-border-main;
+        }
+
+        &:not(.selected):hover {
+          background-color: $stone-gray;
+        }
+      }
+    }
+  }
+
+  .button-section-container {
+    flex: 0 0 5%;
+    border-right: 1px solid $color-border-main;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image-section-container {
+    flex: 0 0 35%;
+    border-right: 1px solid $color-border-main;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+
+    .image-container {
+      flex-grow: 1;
+      height: 100%;
+      padding: 0.75rem;
+      position: relative;
+
+      .ReactCrop__image {
+        max-height: initial !important;
+      }
+
+      .image-disable-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        pointer-events: none;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: $font-size-heading-2;
+        color: #000;
+      }
+
+      &.disabled {
+        opacity: 0.3;
+      }
+
+      .bq-image {
+        width: 100%;
+        height: auto;
+
+        img {
+          height: auto;
+          max-height: auto;
+        }
+
+        .bq-image-selected {
+          position: absolute;
+          pointer-events: none;
+        }
+      }
+    }
+  }
+
+  .details-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+
+    height: 100%;
+    overflow-y: auto;
+
+    .bq-scan-table {
+      font-size: $font-size-small;
+      th {
+        font-weight: 700;
+      }
+
+      tr.highlighted {
+        @include themify(background-color, color-light-purple);
+      }
+
+      th:nth-of-type(1), td:nth-of-type(1) {
+        min-width: 70px;
+        width: 70px;
+      }
+
+      th:nth-of-type(2), td:nth-of-type(2) {
+        min-width: 600px;
+        width: 600px;
+      }
+
+      th:nth-of-type(3), td:nth-of-type(3) {
+        min-width: 80px;
+        width: 80px;
+        max-width: 80px;
+      }
+
+      th:nth-of-type(4), td:nth-of-type(4) {
+        min-width: 100px;
+        width: 100px;
+        max-width: 100px;
+      }
+
+      th:nth-of-type(5), td:nth-of-type(5) {
+        min-width: 100px;
+        width: 100px;
+        max-width: 100px;
+      }
+
+      th:nth-of-type(6), td:nth-of-type(6) {
+        min-width: 50px;
+        width: 50px;
+        max-width: 50px;
+      }
+
+      .tree-table-input {
+        font-size: inherit;
+        font-weight: inherit;
+        padding: 0;
+        line-height: inherit;
+    
+        &.fix-height {
+          height: inherit !important;
+        }
+      }
+    }
+  }
+}
+
+.previewBQ {
+  display: inline !important;
+}
+
+.scrollable-page-tab {
+  display: flex;
+  min-height: 30px;
+  text-align: center;
+  align-content: stretch;
+  overflow-x: auto;
+  box-shadow: 0 0.25rem 0.25rem rgba(0,0,0,0.15);
+
+  .scrollable-page-tab-item {
+    border: 1px solid $color-border-main;
+    width: 100px;
+
+    flex: 1 0 auto;
+
+    button {
+      width: 100px;
+      height: 100%;
+      padding: 1px;
+    }
+
+    .arrow-button {
+      cursor: pointer;
+      opacity: 0;   
+      color:  $color-text-default;
+
+      &:hover {
+        @include themify(color, color-brand-secondary);
+      }
+
+      &.disabled {
+        color: #ccc;
+      }
+     }
+    
+    // hover for tab button
+    &:hover {
+      .arrow-button {
+        opacity: 1;
+      }
+    }
+
+    &.selected {
+      background-color: $color-border-main;
+      border-bottom: 3px solid;
+      @include themify(border-bottom-color, color-brand-secondary);
+
+      button {
+        font-weight: 600;
+      }
+    }
+  }
+}

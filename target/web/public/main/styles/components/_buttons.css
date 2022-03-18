@@ -1,0 +1,474 @@
+.btn {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+  &.btn-brand {
+    @include themify-gradient();
+    color: #fff;
+    border-radius: 4px;
+    min-width: 150px;
+    text-transform: none;
+    font-size: 14px;
+  }
+
+  &.small-btn-brand {
+    @include themify-gradient();
+    color: #fff;
+    border-radius: 4px;
+    text-transform: none;
+  }
+
+  &.btn-outline-brand {
+    color: $color-brand-secondary;
+    background-color: transparent;
+    background-image: none;
+    text-transform: none;
+    padding: 8px 16px;
+  }
+
+  &.btn-outline-brand:hover {
+    @include themify-gradient();
+    color: #fff;
+    transition: background .5s, opacity 1s;
+  }
+
+  &.btn-biznetwork {
+    @include themify-gradient();
+    color: #fff;
+    border-radius: 3px;
+    min-width: 100px;
+    text-transform: none;
+    font-size: 14px;
+  }
+
+  &.btn-bq {
+    @include themify-gradient();
+    color: #fff;
+    border-radius: 3px;
+    min-width: 10px;
+    text-transform: none;
+    font-size: 14px;
+  }
+
+  &.btn-pill {
+    border-radius: 2rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+ 
+  &.btn-pill:hover {
+    text-decoration: none;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+  }
+
+  &.btn-colour {
+    text-transform: none;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #fff;
+
+    &.purple {
+      background-color: $color-brand-secondary;
+    }
+
+    &.red {
+      background-color: $color-brand-primary;
+    }
+  }
+
+  &.btn-nofocus:focus{
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.btn-purple {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background:#A34AAC;
+
+  &.white-content {
+    color: #fff;
+    border-radius: 4px;
+    text-transform: none;
+  }
+}
+
+.btn-transparent {
+  border: #fff solid 2px;
+  background: transparent;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  min-width: 150px;
+
+  &:hover {
+    color: #fff;
+  }
+}
+
+.btn-white {
+  background: white;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.btn-color {
+  border-radius: 15px;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  width: 150px;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.blue {
+    @include themify(background-color, color-bright-blue);
+  }
+
+  &.blue-inverse {
+    border: 1px solid;
+    @include themify((color, border-color), (color-bright-blue, color-bright-blue), !important);
+    background-color: transparent;
+  }
+
+  &.cloud {
+    background-color: #efebe8;
+  }
+
+  &.white-inverse {
+    border: 1px solid;
+    border-color: white;
+    background-color: transparent;
+  }
+
+  &.red {
+    background-color: $crimson-red;
+  }
+
+  &.grey {
+    background-color: $color-text-default;
+  }
+
+  &.brand {
+    @include themify-gradient();
+  }
+}
+
+.btn-color:focus {
+  outline: none;
+}
+
+.ripple {
+  background-position: center;
+  transition: 0.8s;
+}
+
+.ripple:active {
+  background-color: $color-border-main;
+  background-size: 100%;
+  transition: 0s;
+}
+
+.no-decoration-btn {
+  background-color: transparent;
+  border: 0px;
+  padding: 0;
+  cursor: pointer;
+
+  &.collapse-toggle:focus {
+    color: white;
+  }
+
+  &.no-pointer {
+    cursor: default !important;
+  }
+}
+
+.no-decoration-btn-auto-width {
+  background-color: transparent;
+  border: 0px;
+  padding: 0;
+  width: auto;
+  cursor: pointer;
+
+  &.collapse-toggle:focus {
+    color: white;
+  }
+}
+
+.disabled-no-decoration-btn {
+  background-color: transparent;
+  border: 0px;
+  padding: 0;
+
+  &.collapse-toggle:focus {
+    color: white;
+  }
+}
+
+.no-cursor-btn {
+  background-color: transparent;
+  border: 0px;
+  padding: 0;
+}
+
+.no-decoration-btn:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+  color: gray;
+}
+
+.select-company-button {
+  box-shadow: 0 0 0;
+}
+
+.link-button {
+  background-color: transparent;
+  border: 0px;
+  padding: 0;
+
+  &.link-blue { 
+    color: $color-link-blue;
+  }
+
+  &:not(.disabled):hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+  }
+}
+
+.module-link-button {
+  background-color: transparent;
+  border: 0px;
+  padding: 0;
+  color: #444;
+
+  &:hover { 
+    color: #444;
+  }
+
+  &:not(.disabled):hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &.disabled {
+    opacity: 0.5;
+  }
+}
+
+.company-profile-status-button {
+  text-align: center;
+  border-radius: 8px;
+  display: inline-block;
+  width: 100px;
+  vertical-align: middle;
+}
+
+.company-category-status-button {
+  text-align: center;
+  border-radius: 4px;
+  display: inline-block;
+  
+  vertical-align: middle;
+}
+
+
+.company-subscription-type-status-button {
+  text-align: center;
+  border-radius: 8px;
+  display: inline-block;
+  width: 50px;
+  vertical-align: middle;
+}
+
+.project-detail-status-button {
+  border-radius: 8px;
+}
+
+.upload-background-cover-button {
+  background-color: transparent;
+  bottom: 5px;
+  right: 5px;
+  cursor: pointer;
+  box-shadow: none;
+}
+
+.add-form-button {
+  border-style: dashed;
+  border-width: 0.5px;
+  color: $color-text-default;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #000;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.caret {
+  cursor: text;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.company-profile-dropdown-menu {
+  position: absolute;
+  right: 15px;
+  top: 20px;
+  z-index: 1;
+}
+
+.no-shadow {
+  box-shadow: none !important;
+}
+
+.webkit-menu-none {
+  -webkit-appearance: none !important;
+}
+
+.btn-gradient {
+  @include themify-gradient();
+  border: none;
+  border-radius: 6px;
+}
+
+.btn-blue {
+  border: 1px solid;
+  @include themify(border-color, color-light-blue);
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.btn-green {
+  border: 1px solid $light-green;
+  @include themify(border-color, $light-green);
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.btn-gray {
+  border: 1px solid $color-text-default;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.btn-outline-light {
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.btn-outline-dark {
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.small-menu-dropdown-icon {
+  height: 12px;
+  width: 12px;
+  cursor: pointer;
+}
+
+.medium-menu-dropdown-icon {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+
+  &.icon-right {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.pill-dotted-btn {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border-style: dotted;
+  border-width: 2px;
+  @include themify((color, border-color), (color-brand-secondary, color-brand-secondary));
+  border-radius: 5rem;
+  margin: 0.25rem;
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+
+  &.optional {
+    border-color: $color-text-default;
+    color: $color-text-default;
+  }
+}
+
+.large-modal-create-btn {
+  border: 1px solid $color-border-main;
+  border-radius: 5px;
+  text-align: center;
+  padding: 2rem 1rem;
+  height: 100%;
+  cursor: default;
+
+  &:not(.disabled) {
+    cursor: pointer;
+  }
+
+  &:not(.disabled):hover {
+    border-color: #000;
+  }
+
+  &.disabled {
+    background-color: $color-bg-auth;
+  }
+
+  a {
+    display: inline-block;
+    font-size: $font-size-small;
+    margin-top: 1rem;
+  }
+
+  .material-icons {
+    font-size: 48px;
+    @include themify('color', color-brand-primary);
+    padding-bottom: 1rem;
+  }
+}
+
+.border-radius-0 {
+  border-radius: 0px;
+}
+
+.add-category-button {
+  font-size: 25px; 
+}
+
+.category-list-back-button{
+  margin-top: -5px;
+}
+
+.category-list-eye-button {
+  font-size: 15px;
+}
+
+.action-button-project-checklist {
+  color: purple;
+  font-size: 17px;
+}

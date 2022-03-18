@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="58px" height="58px" viewBox="0 0 58 58" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53 (72520) - https://sketchapp.com -->
+    <title>Bill of Quantity Icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Menu-Drawer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="MENU" transform="translate(-1246.000000, -470.000000)" fill-rule="nonzero">
+            <g id="Bill-of-Quantity-Icon" transform="translate(1246.000000, 470.000000)">
+                <polygon id="Path" fill="#EDEEF2" points="43.49 1.64 43.49 57.57 0.38 57.57 0.38 14.34 14.09 1.64"></polygon>
+                <polygon id="Path" fill="#DCE9EF" points="38.32 24.44 43.49 31.03 43.49 57.57 28.37 57.57 20.47 35.33"></polygon>
+                <polygon id="Path" fill="#CAD3D5" points="14.71 13.99 0.38 14.34 14.09 1.64"></polygon>
+                <rect id="Rectangle" fill="#CAD3D5" x="5.19" y="19.99" width="33.13" height="2"></rect>
+                <rect id="Rectangle" fill="#CAD3D5" x="5.19" y="26.91" width="33.13" height="2"></rect>
+                <rect id="Rectangle" fill="#CAD3D5" x="5.19" y="33.83" width="33.13" height="2"></rect>
+                <rect id="Rectangle" fill="#CAD3D5" x="5.19" y="40.75" width="33.13" height="2"></rect>
+                <rect id="Rectangle" fill="#CAD3D5" x="5.19" y="47.66" width="33.13" height="2"></rect>
+                <rect id="Rectangle" fill="#7B2A86" transform="translate(36.195967, 20.237148) rotate(-42.904994) translate(-36.195967, -20.237148) " x="22.8456674" y="14.2370133" width="26.7005993" height="12.0002693"></rect>
+                <rect id="Rectangle" fill="#F9C14F" transform="translate(47.003089, 10.192279) rotate(-42.904994) translate(-47.003089, -10.192279) " x="45.3080515" y="4.19214433" width="3.39007609" height="12.0002693"></rect>
+                <path d="M48.17,0.92 L44.13,4.68 L52.3,13.47 L56.37,9.69 C57.38,8.75 57.44,7.17 56.5,6.16 L51.76,1.06 C50.8,0.02 49.19,-0.04 48.17,0.92 Z" id="Path" fill="#69C8CA"></path>
+                <path d="M20.15,34.99 L22.27,25.19 C22.29,25.08 22.43,25.04 22.51,25.13 L30.32,33.54 C30.39,33.62 30.35,33.75 30.24,33.77 L20.47,35.33 C20.27,35.36 20.11,35.18 20.15,34.99 Z" id="Path" fill="#F9C14F"></path>
+                <rect id="Rectangle" fill="#A059A2" transform="translate(35.965920, 20.201184) rotate(-41.842418) translate(-35.965920, -20.201184) " x="22.7556069" y="18.2011366" width="26.4206263" height="4.00009482"></rect>
+                <path d="M20.66,32.63 C20.66,32.63 22.35,33.66 22.59,34.99 L20.2,35.39 C20.09,35.41 20,35.31 20.03,35.2 L20.66,32.63 Z" id="Path" fill="#583B00"></path>
+            </g>
+        </g>
+    </g>
+</svg>

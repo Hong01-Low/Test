@@ -1,0 +1,35 @@
+// https://fjcalzado.github.io/DemoSeries-SASS-Easy-Theming/
+@mixin themify( $properties,
+                $keys,
+                $contentAfter: null,
+                $contentBefore: null,
+                $themes: $themes)
+{
+  // Iterate over the themes.
+  @each $theme, $themeItem in $themes {
+    // Create a selector THEME-CLASS.
+    .theme-#{$theme} & {
+      // Iterate over each property-key value.
+      @for $i from 1 through length($properties){
+        $property: nth($properties,$i);
+        $key: nth($keys,$i);
+        #{$property}: $contentBefore map-get($themeItem, $key) $contentAfter;
+      }
+    }
+  }
+}
+
+@mixin themify-gradient(
+  $direction: right,
+  $themes: $themes)
+{
+  @each $theme, $themeItem in $themes {
+    .theme-#{$theme} & {
+      background-image: linear-gradient(
+        to $direction,
+        map-get($themeItem, color-gradient-primary),
+        map-get($themeItem, color-gradient-secondary)
+      );
+    }
+  }
+}
